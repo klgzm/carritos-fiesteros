@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CARRITOS FIESTEROS - CARRITOS TEMÁTICOS</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- Tipografía elegante para títulos -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet"/>
+  <style>
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+    }
+    .carrito-box {
+      position: relative;
+      border-width: 3px;
+      border-style: solid;
+      border-radius: 10px;
+      padding: 1rem 1.25rem 3rem 1.25rem; /* espacio abajo para ruedas */
+      margin-bottom: 1.5rem;
+      background-color: white;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+      cursor: pointer;
+    }
+    .carrito-box:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .borde-goloso { border-color: #fbb6ce; }
+    .borde-goloso:hover { border-color: #ec4899; }
+
+    .borde-picosito { border-color: #f87171; }
+    .borde-picosito:hover { border-color: #b91c1c; }
+
+    .borde-dulce { border-color: #fcd34d; }
+    .borde-dulce:hover { border-color: #ca8a04; }
+
+    .borde-refrescante { border-color: #60a5fa; }
+    .borde-refrescante:hover { border-color: #1e40af; }
+
+    .borde-fiesta { border-color: #a78bfa; }
+    .borde-fiesta:hover { border-color: #6b21a8; }
+
+    .borde-mixparty { border-color: #34d399; }
+    .borde-mixparty:hover { border-color: #064e3b; }
+
+    .borde-crunchshot { border-color: #f97316; }
+    .borde-crunchshot:hover { border-color: #7c2d12; }
+
+    .borde-fiestatotal { border-color: #3b82f6; }
+    .borde-fiestatotal:hover { border-color: #1e40af; }
+
+    .borde-minidelicias { border-color: #ec4899; }
+    .borde-minidelicias:hover { border-color: #9d174d; }
+
+    .borde-saladosweet { border-color: #10b981; }
+    .borde-saladosweet:hover { border-color: #064e3b; }
+
+    /* Ruedas del carrito */
+    .carrito-box::before, .carrito-box::after {
+      content: "";
+      position: absolute;
+      bottom: 0.6rem;
+      width: 1.2rem;
+      height: 1.2rem;
+      background: #444;
+      border-radius: 50%;
+      box-shadow: inset -3px -3px 5px rgba(0,0,0,0.5);
+      animation: girarRueda 6s linear infinite;
+    }
+    .carrito-box::before {
+      left: 1.3rem;
+    }
+    .carrito-box::after {
+      right: 1.3rem;
+    }
+
+    /* Animación rueda girando */
+    @keyframes girarRueda {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-pink-50 to-white text-gray-800">
+
+  <!-- Encabezado -->
+  <header class="flex items-center justify-between px-6 py-4 shadow-md bg-white sticky top-0 z-50">
+    <div class="flex items-center space-x-3">
+      <img src="logo.jpg" alt="Logo" class="w-12 h-12" />
+      <h1 class="text-2xl font-bold uppercase">Carritos Fiesteros</h1>
+    </div>
+    <nav class="space-x-4 text-sm font-semibold">
+      <a href="Indexx.html">INICIO</a>
+      <a href="nosotros.html">¿QUIÉNES SOMOS?</a>
+      <a href="menu.html">NUESTRO MENÚ</a>
+      <a href="tematicos.html">CARRITOS TEMÁTICOS</a>
+      <a href="sumale.html">SÚMALE SABOR</a>
+      <a href="contacto.html">CONTACTO</a>
+    </nav>
+  </header>
+
+  <!-- SECCIÓN CARRITOS TEMÁTICOS -->
+  <section id="carritos-tematicos" class="carritos py-16 px-8 max-w-5xl mx-auto">
+    <h2 class="titulo-seccion text-4xl font-bold uppercase text-center mb-6 hero-title">
+      CARRITOS TEMÁTICOS
+    </h2>
+    
+    <p class="text-center max-w-3xl mx-auto text-lg mb-12">
+      Elige el carrito perfecto para tu evento. Ya sea que busques algo dulce, salado, refrescante o todo al mismo tiempo, tenemos la opción ideal para cada tipo de fiesta. 🎉
+    </p>
+    <p class="text-center max-w-3xl mx-auto text-lg mb-12">
+        ¡Descubre los sabores que llegarán rodando hasta ti!
+    </p>
+
+    <div class="space-y-10">
+      <div class="carrito-box borde-goloso">
+        <h3 class="text-2xl font-semibold mb-1"><span>🧁</span> 1. El Carrito Goloso</h3>
+        <p class="subtitulo italic mb-2">Especialidad en Mini Repostería Creativa</p>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Mini cupcakes decorados</li>
+          <li>Brownies en cubitos</li>
+          <li>Cake pops</li>
+          <li>Macarons de colores</li>
+        </ul>
+      </div>
+
+      <div class="carrito-box borde-picosito">
+        <h3 class="text-2xl font-semibold mb-1"><span>🌶️</span> 2. Carrito Picosito</h3>
+        <p class="subtitulo italic mb-2">Botana Salada con Toque Mexicano</p>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Takis, Cheetos, Doritos</li>
+          <li>Cacahuates enchilados y japoneses</li>
+          <li>Skwinkles y gomitas enchiladas</li>
+        </ul>
+      </div>
+
+      <div class="carrito-box borde-dulce">
+        <h3 class="text-2xl font-semibold mb-1"><span>🍬</span> 3. Dulce sobre Ruedas</h3>
+        <p class="subtitulo italic mb-2">Botanas Dulces Clásicas</p>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Gomitas surtidas</li>
+          <li>Malvaviscos bañados en chocolate</li>
+          <li>Caramelos, chocolates y mazapanes</li>
+        </ul>
+      </div>
+
+      <div class="carrito-box borde-refrescante">
+        <h3 class="text-2xl font-semibold mb-1"><span>🍹</span> 4. El Carrito Refrescante</h3>
+        <p class="subtitulo italic mb-2">Bebidas sin Alcohol para Todos</p>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Aguas frescas naturales</li>
+          <li>Smoothies frutales</li>
+          <li>Limonada con hierbabuena</li>
+          <li>Mocktails tropicales sin alcohol</li>
+        </ul>
+      </div>
+
+      <div class="carrito-box borde-fiesta">
+        <h3 class="text-2xl font-semibold mb-1"><span>🍸</span> 5. Fiesta a Sorbos</h3>
+        <p class="subtitulo italic mb-2">Bebidas con Alcohol para Adultos</p>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Margaritas clásicas y de sabores</li>
+          <li>Mojito de menta</li>
+          <li>Clericot</li>
+          <li>Shots personalizados</li>
+        </ul>
+      </div>
+
+      <div class="carrito-box borde-mixparty">
+        <h3 class="text-2xl font-semibold mb-1"><span>🎉</span> 6. Mix & Party</h3>
+        <p class="subtitulo italic mb-2">Dulces + Bebidas sin Alcohol</p>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Gomitas, chocolates, paletas</li>
+          <li>Smoothies o aguas frescas</li>
+          <li>Té helado o mocktails</li>
+        </ul>
+      </div>
+
+      <div class="carrito-box borde-crunchshot">
+        <h3 class="text-2xl font-semibold mb-1"><span>🔥</span> 7. Crunch & Shot</h3>
+        <p class="subtitulo italic mb-2">Botanas Saladas + Bebidas con Alcohol</p>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Doritos, palomitas, cacahuates</li>
+          <li>Margaritas, gin tonics, baby mangos</li>
+        </ul>
+      </div>
+
+      <div class="carrito-box borde-fiestatotal">
+        <h3 class="text-2xl font-semibold mb-1"><span>🌈</span> 8. Carrito Fiesta Total</h3>
+        <p class="subtitulo italic mb-2">Todo Incluido: Dulce, Salado y Bebidas</p>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Gomitas, cupcakes, brownies</li>
+          <li>Papas, cacahuates, Skwinkles</li>
+          <li>Aguas frutales o cócteles</li>
+        </ul>
+      </div>
+
+      <div class="carrito-box borde-minidelicias">
+        <h3 class="text-2xl font-semibold mb-1"><span>🎀</span> 9. Mini Delicias</h3>
+        <p class="subtitulo italic mb-2">Repostería + Dulces Clásicos</p>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Macarons, donitas mini, galletitas decoradas</li>
+          <li>Chocolates, confites, malvaviscos</li>
+        </ul>
+      </div>
+
+      <div class="carrito-box borde-saladosweet">
+        <h3 class="text-2xl font-semibold mb-1"><span>🌀</span> 10. Salado & Sweet</h3>
+        <p class="subtitulo italic mb-2">Dulces + Salados, sin bebidas</p>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Cheetos, papas, palomitas</li>
+          <li>Pulparindos, tarugos, palanquetas</li>
+          <li>Mazapanes y gomitas</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="boton-regreso mt-10 text-center">
+      <a href="#menu-botanas" class="btn inline-block px-6 py-3 bg-yellow-400 rounded-full font-semibold hover:bg-yellow-500 transition">
+        📋 Ver menú completo de opciones
+      </a>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal().reveal('section', {
+      delay: 200,
+      distance: '20px',
+      origin: 'bottom',
+      duration: 800
+    });
+  </script>
+</body>
+</html>
