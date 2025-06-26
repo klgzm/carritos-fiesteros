@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CARRITOS FIESTEROS - SÚMALE SABOR</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- Tipografía elegante para títulos -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet"/>
+  <style>
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+    }
+    /* Bordes laterales de colores para cada tarjeta */
+    .border-amarillo { border-left: 6px solid #FBBF24; }   /* amarillo */
+    .border-rosa { border-left: 6px solid #EC4899; }      /* rosa */
+    .border-naranja { border-left: 6px solid #F97316; }   /* naranja */
+    .border-azul { border-left: 6px solid #3B82F6; }      /* azul */
+    .border-verde { border-left: 6px solid #22C55E; }     /* verde */
+    .border-purpura { border-left: 6px solid #8B5CF6; }   /* púrpura */
+    .border-rosado { border-left: 6px solid #DB2777; }    /* rosado fuerte */
+    .border-celeste { border-left: 6px solid #60A5FA; }   /* celeste */
+    .border-rojo { border-left: 6px solid #EF4444; }      /* rojo */
+    .border-morado { border-left: 6px solid #7C3AED; }    /* morado */
+
+    /* Iconos con el mismo color del borde */
+    .icono {
+      font-size: 1.8rem;
+      margin-right: 0.5rem;
+      vertical-align: middle;
+    }
+    .icono-amarillo { color: #FBBF24; }
+    .icono-rosa { color: #EC4899; }
+    .icono-naranja { color: #F97316; }
+    .icono-azul { color: #3B82F6; }
+    .icono-verde { color: #22C55E; }
+    .icono-purpura { color: #8B5CF6; }
+    .icono-rosado { color: #DB2777; }
+    .icono-celeste { color: #60A5FA; }
+    .icono-rojo { color: #EF4444; }
+    .icono-morado { color: #7C3AED; }
+
+    /* Tarjetas con sombra, padding y borde lateral */
+    .tarjeta {
+      background-color: white;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+      border-radius: 0.5rem;
+      margin-bottom: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      border-left-width: 6px;
+    }
+
+    /* Títulos flex para ícono + texto */
+    .titulo-tarjeta {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+      color: #111827;
+    }
+    /* Subtítulos itálicos */
+    .subtitulo {
+      font-style: italic;
+      margin-bottom: 0.75rem;
+      color: #4B5563;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-pink-50 to-white text-gray-800">
+
+  <!-- Encabezado -->
+  <header class="flex items-center justify-between px-6 py-4 shadow-md bg-white sticky top-0 z-50">
+    <div class="flex items-center space-x-3">
+      <img src="logo.jpg" alt="Logo" class="w-12 h-12" />
+      <h1 class="text-2xl font-bold uppercase">Carritos Fiesteros</h1>
+    </div>
+    <nav class="space-x-4 text-sm font-semibold">
+      <a href="Indexx.html">INICIO</a>
+      <a href="nosotros.html">¿QUIÉNES SOMOS?</a>
+      <a href="menu.html">NUESTRO MENÚ</a>
+      <a href="tematicos.html">CARRITOS TEMÁTICOS</a>
+      <a href="sumale.html">SÚMALE SABOR</a>
+      <a href="contacto.html">CONTACTO</a>
+    </nav>
+  </header>
+
+  <section class="py-16 px-6 max-w-6xl mx-auto fade-in">
+    <h2 class="hero-title text-4xl md:text-5xl text-black mb-8">SÚMALE SABOR</h2>
+
+    <p class="text-center max-w-3xl mx-auto text-lg mb-12">
+      Rellenos irresistibles y personal experto para que tu carrito nunca se detenga. <br>
+      Dale ese toque extra a tu experiencia fiestera con nuestros servicios adicionales. Ya sea que necesites recargar tu carrito a mitad del evento o quieras contar con personal que atienda, sirva o anime a tus invitados, ¡aquí encontrarás todo para elevar el sabor y la atención en tu celebración!
+    </p>
+
+    <!-- Servicios Extra de Rellenado -->
+    <div class="tarjeta border-amarillo">
+      <h3 class="titulo-tarjeta">
+        <span class="icono icono-amarillo">🧃</span> 1. Relleno Total Express
+      </h3>
+      <p class="subtitulo">Recarga completa del carrito contratado (botanas, dulces o bebidas). Ideal para eventos largos. Se repone el 100% del contenido original.</p>
+    </div>
+
+    <div class="tarjeta border-rosa">
+      <h3 class="titulo-tarjeta">
+        <span class="icono icono-rosa">🍽️</span> 2. Mitad de Carrito
+      </h3>
+      <p class="subtitulo">Relleno del 50% del carrito contratado. Perfecto para una segunda ronda sin exagerar.</p>
+    </div>
+
+    <div class="tarjeta border-naranja">
+      <h3 class="titulo-tarjeta">
+        <span class="icono icono-naranja">🍸</span> 3. Shot Reload
+      </h3>
+      <p class="subtitulo">Relleno exclusivo de bebidas con alcohol. Incluye nuevas rondas de shots personalizados y cócteles básicos.</p>
+    </div>
+
+    <div class="tarjeta border-azul">
+      <h3 class="titulo-tarjeta">
+        <span class="icono icono-azul">🍬</span> 4. GomiBomb Mix
+      </h3>
+      <p class="subtitulo">Combinación especial: gomitas surtidas + tarugos + pulparindos. ¡Ideal para chicos, jóvenes y fanáticos del dulce mexicano!</p>
+    </div>
+
+    <div class="tarjeta border-verde">
+      <h3 class="titulo-tarjeta">
+        <span class="icono icono-verde">🥨</span> 5. CrunchTime
+      </h3>
+      <p class="subtitulo">Refuerzo salado con papas, cacahuates y palomitas al gusto.</p>
+    </div>
+
+    <div class="tarjeta border-purpura">
+      <h3 class="titulo-tarjeta">
+        <span class="icono icono-purpura">🍫</span> 6. Dulce Dúo
+      </h3>
+      <p class="subtitulo">Elige dos dulces favoritos: gomitas + chocolates, malvaviscos + confites, etc.</p>
+    </div>
+
+    <div class="tarjeta border-rosado">
+      <h3 class="titulo-tarjeta">
+        <span class="icono icono-rosado">🍹</span> 7. Refresco de Frutas
+      </h3>
+      <p class="subtitulo">Recarga de bebidas sin alcohol: aguas frescas, smoothies o mocktails frutales.</p>
+    </div>
+
+    <div class="tarjeta border-celeste">
+      <h3 class="titulo-tarjeta">
+        <span class="icono icono-celeste">🧁</span> 8. Mini Cupcake Boost
+      </h3>
+      <p class="subtitulo">Recarga enfocada en mini repostería: cupcakes, brownies y cake pops.</p>
+    </div>
+
+    <div class="tarjeta border-rojo">
+      <h3 class="titulo-tarjeta">
+        <span class="icono icono-rojo">🌶️</span> 9. Fiesta Tamalito (Spicy Reload)
+      </h3>
+      <p class="subtitulo">Combo enchilado: Takis, Skwinkles, cacahuates picantes y gomitas picosas.</p>
+    </div>
+
+    <div class="tarjeta border-morado">
+      <h3 class="titulo-tarjeta">
+        <span class="icono icono-morado">🎯</span> 10. Recarga Selectiva
+      </h3>
+      <p class="subtitulo">Elige 3 productos específicos para un relleno parcial a tu medida.</p>
+    </div>
+
+    <!-- Servicios de Personal Extra -->
+    <h3 class="text-3xl font-bold mt-16 mb-8 text-black hero-title text-center">Servicios de Personal Extra</h3>
+
+    <div class="tarjeta border-amarillo">
+      <h3 class="titulo-tarjeta">
+        <span class="icono icono-amarillo">👩‍🍳</span> 1. Dulce Host (1 persona)
+      </h3>
+      <p class="subtitulo">Encargado de ofrecer dulces y mantener ordenado el carrito.</p>
+      <p><em>Funciones:</em> Atención directa a invitados, Reposición ligera, Apoyo a menores de edad.</p>
+    </div>
+
+    <div class="tarjeta border-rosa">
+      <h3 class="titulo-tarjeta">
+        <span class="icono icono-rosa">🍹</span> 2. Bartender de Carrito (1 persona)
+      </h3>
+      <p class="subtitulo">Especialista en servir cócteles y bebidas sin alcohol.</p>
+      <p><em>Funciones:</em> Preparación de bebidas, Control de porciones, Orden y limpieza de zona de servicio.</p>
+    </div>
+
+    <div class="tarjeta border-naranja">
+      <h3 class="titulo-tarjeta">
+        <span class="icono icono-naranja">👥</span> 3. Team Sweet (2 personas)
+      </h3>
+      <p class="subtitulo">Doble staff para eventos medianos.</p>
+      <p><em>Funciones:</em> 1 para dulces, 1 para bebidas o snacks, Atención y recarga ligera.</p>
+    </div>
+
+    <div class="tarjeta border-azul">
+      <h3 class="titulo-tarjeta">
+        <span class="icono icono-azul">🎛️</span> 4. Coordinador de Carrito (1 persona)
+      </h3>
+      <p class="subtitulo">Supervisión y logística del carrito contratado.</p>
+      <p><em>Funciones:</em> Supervisión de tiempos y personal, Manejo de rellenos, Resolución de imprevistos.</p>
+    </div>
+
+    <div class="tarjeta border-verde">
+      <h3 class="titulo-tarjeta">
+        <span class="icono icono-verde">🎉</span> 5. Fiesta Crew (3 personas)
+      </h3>
+      <p class="subtitulo">Equipo completo para atención dinámica.</p>
+      <p><em>Funciones:</em> 1 para dulces, 1 para bebidas, 1 animador o asistente con interacción básica.</p>
+    </div>
+
+    <div class="tarjeta border-purpura">
+      <h3 class="titulo-tarjeta">
+        <span class="icono icono-purpura">🤹‍♂️</span> 6. Animador de Carrito (1 persona)
+      </h3>
+      <p class="subtitulo">Ideal para fiestas infantiles o temáticas.</p>
+      <p><em>Funciones:</em> Interacción con invitados, Dinámicas y juegos, Reparto divertido de dulces.</p>
+    </div>
+
+    <div class="tarjeta border-rosado">
+      <h3 class="titulo-tarjeta">
+        <span class="icono icono-rosado">🍰</span> 7. Sweet & Serve (2 personas)
+      </h3>
+      <p class="subtitulo">Personal para repostería creativa y bebidas.</p>
+      <p><em>Funciones:</em> 1 en repostería decorativa, 1 en bebidas.</p>
+    </div>
+
+    <div class="tarjeta border-celeste">
+      <h3 class="titulo-tarjeta">
+        <span class="icono icono-celeste">🛡️</span> 8. Guardián del Carrito (1 persona)
+      </h3>
+      <p class="subtitulo">Vigilancia y control de consumo en eventos abiertos o muy concurridos.</p>
+      <p><em>Funciones:</em> Supervisión visual, Apoyo pasivo, Prevención de mal uso.</p>
+    </div>
+
+    <div class="tarjeta border-rojo">
+      <h3 class="titulo-tarjeta">
+        <span class="icono icono-rojo">🌟</span> 9. Servicio VIP (4 personas)
+      </h3>
+      <p class="subtitulo">Atención premium para eventos grandes o de alto perfil.</p>
+      <p><em>Funciones:</em> 1 coordinador, 1 para dulces, 1 para bebidas, 1 animador/ayudante.</p>
+    </div>
+
+    <div class="tarjeta border-morado">
+      <h3 class="titulo-tarjeta">
+        <span class="icono icono-morado">⏰</span> 10. Servicio Turno Largo (2 personas por 6+ horas)
+      </h3>
+      <p class="subtitulo">Cobertura extendida para eventos prolongados.</p>
+      <p><em>Funciones:</em> Turno con relevos, Servicio continuo, Atención sin interrupciones.</p>
+    </div>
+
+    <p class="mt-10 text-center text-lg font-semibold">
+      El carrito ideal te está esperando… solo falta tu mensaje. 
+      <a href="contacto.html" class="inline-block bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded transition-colors duration-300 ml-2">
+        ¡Contáctanos ahora!
+      </a>
+    </p>
+  </section>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal().reveal('section', {
+      delay: 200,
+      distance: '20px',
+      origin: 'bottom',
+      duration: 800
+    });
+  </script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CARRITOS FIESTEROS - ¿QUIÉNES SOMOS?</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- Tipografía elegante para títulos -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet"/>
+  <style>
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-pink-50 to-white text-gray-800">
+
+  <!-- Encabezado -->
+  <header class="flex items-center justify-between px-6 py-4 shadow-md bg-white sticky top-0 z-50">
+    <div class="flex items-center space-x-3">
+      <img src="logo.jpg" alt="Logo" class="w-12 h-12" />
+      <h1 class="text-2xl font-bold uppercase">Carritos Fiesteros</h1>
+    </div>
+    <nav class="space-x-4 text-sm font-semibold">
+      <a href="Indexx.html">INICIO</a>
+      <a href="nosotros.html">¿QUIÉNES SOMOS?</a>
+      <a href="menu.html">NUESTRO MENÚ</a>
+      <a href="tematicos.html">CARRITOS TEMÁTICOS</a>
+      <a href="sumale.html">SÚMALE SABOR</a>
+      <a href="contacto.html">CONTACTO</a>
+    </nav>
+  </header>
+
+  <!-- Sección MENÚ -->
+  <section class="py-16 px-6 max-w-6xl mx-auto fade-in">
+   <h2 class="hero-title text-4xl md:text-5xl text-black mb-8">NUESTRO MENÚ</h2>
+
+    <p class="text-center max-w-3xl mx-auto text-lg mb-12">
+      Conoce los menús que llevamos hasta tu fiesta, diseñados para consentir todos los gustos con el encanto de nuestros carritos fiesteros.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-10">
+
+      <!-- SALADO -->
+      <div class="card borde-salado">
+        <h3 class="text-xl font-bold flex items-center gap-2 mb-4 text-black">🍟 SALADO</h3>
+        <ul class="list-disc ml-6 text-sm space-y-1">
+          <li>Papas Naturales</li><li>Papas Adobadas</li><li>Doritos Nachos</li><li>Cheetos</li><li>Takis</li><li>Palomitas</li><li>Cacahuate Salado</li><li>Cacahuates Enchilado</li><li>Cacahuates Japoneses</li><li>Gomitas Enchiladas</li><li>Picafresa</li><li>Skwinkles</li><li>Manguitos</li>
+        </ul>
+      </div>
+
+      <!-- DULCE -->
+      <div class="card borde-dulce">
+        <h3 class="text-xl font-bold flex items-center gap-2 mb-4 text-black">🍭 DULCE</h3>
+        <ul class="list-disc ml-6 text-sm space-y-1">
+          <li>Gomitas surtidas</li><li>Malvaviscos</li><li>Paletas</li><li>Chocolates pequeños</li><li>Chicles</li><li>Confites</li><li>Caramelos</li><li>Obleas</li><li>Mazapanes</li><li>Pulparindos</li><li>Palanquetas</li><li>Cajeta en mini frascos</li><li>Chiclosos</li><li>Tarugos</li>
+        </ul>
+      </div>
+
+      <!-- REPOSTERÍA -->
+      <div class="card borde-reposteria">
+        <h3 class="text-xl font-bold flex items-center gap-2 mb-4 text-black">🎂 REPOSTERÍA CREATIVA</h3>
+        <ul class="list-disc ml-6 text-sm space-y-1">
+          <li>Mini cupcakes decorados</li><li>Brownies en cubitos</li><li>Galletitas decoradas</li><li>Cake pops</li><li>Alfajores pequeños</li><li>Donitas mini</li><li>Macarons de colores</li>
+        </ul>
+      </div>
+
+      <!-- BEBIDAS CON ALCOHOL -->
+      <div class="card borde-alcohol">
+        <h3 class="text-xl font-bold flex items-center gap-2 mb-4 text-black">🍷 BEBIDAS CON ALCOHOL</h3>
+        <ul class="list-disc ml-6 text-sm space-y-1">
+          <li>Margarita clásica o de sabores</li><li>Gin tonic</li><li>Mojito de menta y lima</li><li>Paloma con tequila</li><li>Clericot</li><li>Cócteles personalizados</li><li>Shots divertidos</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- BEBIDAS SIN ALCOHOL CENTRADO -->
+    <div class="max-w-md mx-auto mt-10">
+      <div class="card borde-sin-alcohol">
+        <h3 class="text-xl font-bold flex items-center gap-2 mb-4 text-black">🥤 BEBIDAS SIN ALCOHOL</h3>
+        <ul class="list-disc ml-6 text-sm space-y-1">
+          <li>Agua de frutas natural</li><li>Mocktails</li><li>Limonada mineral</li><li>Té helado casero</li><li>Smoothies</li><li>Bebidas infusionadas</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TEXTO FINAL CON BOTÓN -->
+    <p class="mt-12 text-center text-lg">
+      ¿No sabes qué elegir? Descubre nuestros diferentes tipos de
+      <a href="tematicos.html" class="btn-link inline-flex items-center gap-1">
+        CARRITOS TEMÁTICOS <span class="text-xl">🎈</span>
+      </a>
+      listos para cada ocasión.
+    </p>
+  </section>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal().reveal('section', {
+      delay: 200,
+      distance: '20px',
+      origin: 'bottom',
+      duration: 800
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+

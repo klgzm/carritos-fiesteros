@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carritos Fiesteros - Contacto</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-pink-50 text-gray-800">
+
+<header class="flex items-center justify-between px-6 py-4 shadow-md bg-white sticky top-0 z-50">
+  <div class="flex items-center space-x-3">
+    <img src="logo.jpg" alt="Logo" class="w-12 h-12" />
+    <h1 class="text-2xl font-bold">Carritos Fiesteros</h1>
+  </div>
+  <nav class="space-x-4 text-sm font-semibold">
+    <a href="Indexx.html">Inicio</a>
+    <a href="nosotros.html">Sobre Nosotros</a>
+    <a href="menu.html">Menú</a>
+    <a href="tematicos.html">Carritos Temáticos</a>
+    <a href="sumale.html">Súmale Sabor</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+</header>
+
+<section id="contacto" class="py-12 px-8 max-w-xl mx-auto">
+  <h2 class="text-3xl font-bold text-center mb-4">Contáctanos</h2>
+  <form action="contacto.php" method="POST" class="bg-white p-6 shadow rounded contact-form">
+    <label for="nombre">Nombre</label><input type="text" name="nombre" required>
+    <label for="telefono">Teléfono</label><input type="tel" name="telefono" required>
+    <label for="correo">Correo Electrónico</label><input type="email" name="correo" required>
+    <label for="tipo-evento">Tipo de Evento</label><input type="text" name="tipo_evento" required>
+    <label for="tematica">Temática del Evento</label><input type="text" name="tematica" required>
+    <label for="dudas">Dudas o Sugerencias</label><textarea name="dudas" rows="4"></textarea>
+    <button type="submit" class="bg-pink-500 text-white px-4 py-2 rounded mt-2">Enviar</button>
+  </form>
+
+  <div class="mt-8 text-center">
+    <p>📱 WhatsApp: <a href="https://wa.me/525565291199" class="text-pink-600 font-semibold">Enviar mensaje</a></p>
+    <p>📞 Llamada: <a href="tel:5558921645" class="text-pink-600 font-semibold">5558921645</a></p>
+    <p>📧 Email: <a href="mailto:carritos.fiesteros@gmail.com" class="text-pink-600 font-semibold">carritos.fiesteros@gmail.com</a></p>
+  </div>
+</section>
+
+</body>
+</html>

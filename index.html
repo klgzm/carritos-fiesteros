@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carritos Fiesteros</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/scrollreveal"></script>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; }
+    .contact-form label { color: red; }
+    .card:hover { transform: scale(1.05) rotate(1deg); transition: all 0.3s; box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-pink-50 to-white text-gray-800">
+
+  <!-- HEADER -->
+  <header class="flex items-center justify-between px-6 py-4 shadow-md bg-white sticky top-0 z-50">
+    <div class="flex items-center space-x-3">
+      <img src="logo.jpg" alt="Logo" class="w-12 h-12"/>
+      <h1 class="text-2xl font-bold">Carritos Fiesteros</h1>
+    </div>
+    <nav class="space-x-4 text-sm font-semibold">
+      <a href="#inicio">Inicio</a>
+      <a href="#nosotros">Sobre Nosotros</a>
+      <a href="#menu">Menú de botanas y bebidas</a>
+      <a href="#tematicos">Carritos Temáticos</a>
+      <a href="#sumale">Súmale Sabor</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- INICIO -->
+  <section id="inicio" class="py-16 px-8 text-center">
+    <h2 class="text-4xl font-bold mb-4">Dale un giro divertido y original a tu celebración</h2>
+    <p class="max-w-3xl mx-auto text-lg mb-6">
+      Descubre nuestras temáticas personalizadas, explora nuestros servicios y déjate sorprender por una propuesta que combina sabor, estilo y atención.
+    </p>
+    <p class="text-pink-700 font-semibold">¿Listo para endulzar tu evento?</p>
+  </section>
+
+  <!-- SOBRE NOSOTROS -->
+  <section id="nosotros" class="py-12 px-8 bg-pink-50">
+    <h2 class="text-3xl font-bold mb-4">Sobre Nosotros</h2>
+    <p class="max-w-3xl mx-auto text-lg">
+      Somos un equipo que buscamos ofrecer un servicio eficaz y eficiente, un recuerdo memorable, diferenciándonos con calidad, seguridad e higiene.
+    </p>
+  </section>
+
+  <!-- MENÚ DE BOTANAS Y BEBIDAS -->
+  <section id="menu" class="py-12 px-8">
+    <h2 class="text-3xl font-bold mb-6 text-center">Menú de botanas y bebidas</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <!-- Repite para cada tipo -->
+      <div class="p-6 bg-white rounded shadow card">
+        <h3 class="text-xl font-bold mb-2">SALADO</h3>
+        <ul class="list-disc ml-5 text-sm">
+          <li>Papas Naturales</li><li>Doritos Nachos</li><li>Palomitas</li>
+          <li>Skwinkles</li><li>Cacahuates</li><li>Gomitas Enchiladas</li>
+        </ul>
+      </div>
+      <div class="p-6 bg-white rounded shadow card">
+        <h3 class="text-xl font-bold mb-2">DULCE</h3>
+        <ul class="list-disc ml-5 text-sm">
+          <li>Gomitas surtidas</li><li>Malvaviscos</li><li>Chocolates</li>
+        </ul>
+      </div>
+      <!-- Agrega REPOSTERÍA CREATIVA, BEBIDAS CON/SIN ALCOHOL como los anteriores -->
+    </div>
+    <p class="mt-6 text-center italic">¿No sabes qué elegir? Descubre nuestros diferentes tipos de carritos fiesteros listos para cada ocasión.</p>
+  </section>
+
+  <!-- CARRITOS TEMÁTICOS -->
+  <section id="tematicos" class="py-12 px-8 bg-pink-50">
+    <h2 class="text-3xl font-bold text-center mb-6">Nuestros Carritos Estrella</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="p-6 bg-white rounded shadow card">
+        <h3 class="text-xl font-bold mb-2">🧁 El Carrito Goloso</h3>
+        <p>Mini repostería creativa para eventos elegantes</p>
+        <ul class="list-disc ml-5 text-sm mt-2">
+          <li>Cupcakes</li><li>Brownies</li><li>Cake pops</li><li>Macarons</li>
+        </ul>
+      </div>
+      <!-- Repite para los 9 carritos restantes... -->
+    </div>
+    <div class="text-center mt-6">
+      <a href="#menu" class="bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600 transition">📋 Ver menú completo de opciones</a>
+    </div>
+  </section>
+
+  <!-- SÚMALE SABOR -->
+  <section id="sumale" class="py-12 px-8">
+    <h2 class="text-3xl font-bold mb-4">Súmale Sabor</h2>
+    <p class="mb-6">
+      Rellenos irresistibles y personal experto para que tu carrito nunca se detenga...
+    </p>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div class="bg-white p-4 shadow rounded card">
+        <h3 class="font-semibold">💡 Relleno Total Express</h3>
+        <ul class="list-disc ml-5 text-sm"><li>Recarga completa</li></ul>
+      </div>
+      <!-- Resto de los 10 rellenos y 10 servicios de personal -->
+    </div>
+    <div class="text-center mt-6">
+      <a href="#contacto" class="bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600 transition">¡Contáctanos ahora!</a>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="py-12 px-8 bg-pink-50">
+    <h2 class="text-3xl font-bold text-center mb-4">Contáctanos</h2>
+    <form action="contacto.php" method="POST" class="max-w-xl mx-auto bg-white p-6 shadow rounded contact-form">
+      <label for="nombre">Nombre</label><input type="text" name="nombre" required>
+      <label for="telefono">Teléfono</label><input type="tel" name="telefono" required>
+      <label for="correo">Correo Electrónico</label><input type="email" name="correo" required>
+      <label for="tipo-evento">Tipo de Evento</label><input type="text" name="tipo_evento" required>
+      <label for="tematica">Temática del Evento</label><input type="text" name="tematica" required>
+      <label for="dudas">Dudas o Sugerencias</label><textarea name="dudas" rows="4"></textarea>
+      <button type="submit" class="bg-pink-500 text-white px-4 py-2 rounded mt-2">Enviar</button>
+    </form>
+
+    <div class="mt-8 text-center">
+      <p>📱 WhatsApp: <a href="https://wa.me/525565291199" class="text-pink-600 font-semibold">Enviar mensaje</a></p>
+      <p>📞 Llamada: <a href="tel:5558921645" class="text-pink-600 font-semibold">5558921645</a></p>
+      <p>📧 Email: <a href="mailto:carritos.fiesteros@gmail.com" class="text-pink-600 font-semibold">carritos.fiesteros@gmail.com</a></p>
+    </div>
+  </section>
+
+  <script>
+    ScrollReveal().reveal('section', { delay: 200, distance: '20px', origin: 'bottom', duration: 800 });
+  </script>
+</body>
+</html>
+
